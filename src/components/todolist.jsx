@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import './todo.css'
+import { CheckIcon, DeleteIcon } from "@chakra-ui/icons";
+import { Stack } from "@chakra-ui/react";
 
 class Todo extends Component {
     constructor(props) {
@@ -35,9 +37,11 @@ class Todo extends Component {
         return (
             <div className={this.cssClasses()}>{this.state.description}
                 <br />
-                <button onClick={this.markAsDone}>Mark as Done</button>
                 <br />
-                <button onClick={this.removeTodo}>Remove</button>
+                <Stack direction='row'>
+                    <CheckIcon alignContent="right" color="green.300" onClick={this.markAsDone} />
+                    <DeleteIcon alignContent="right" color="red.700" onClick={this.removeTodo} />
+                </Stack>
             </div>
         );
     }

@@ -1,17 +1,19 @@
 .Todo {
-    border: 2px solid black;
     text-align: center;
-    background: #f5f5f5;
-    color: #333;
-    margin: 20px;
+    margin-bottom: 20px;
     padding: 20px;
+    width: 50%;
 }
+
 .Done {
-    background: #f58888;
+    background: #5affac;
+    transition: 0.4s ease-in;
+    width: 50%;
 }
+
 .TodoList {
-    margin: 20px;
+    text-align: center;
+    margin-bottom: 20px;
     padding: 20px;
-    border: 2px solid #00D8FF;
-    background: #DDEEFF;
+    width: 50%;
 }

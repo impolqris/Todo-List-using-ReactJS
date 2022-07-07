@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './NewTodo.css';
+import { Button, Input } from '@chakra-ui/react';
 
 class NewTodo extends Component {
     constructor(props) {
@@ -21,9 +21,13 @@ class NewTodo extends Component {
     render() {
         return(
             <div className="NewTodo">
-                <input type="text" onChange={this.handleUpdate} value={this.state.item} />
-                &nbsp;&nbsp;
-                <button onClick={this.addTodo}>Add</button>
+
+                <Input type="text" isInvalid variant="flushed" errorBorderColor='red.200' onChange={this.handleUpdate} value={this.state.item} />
+                <br></br><br></br>
+                <Button onClick={this.addTodo}>Add</Button>
+
+                <br></br><br></br>
+
             </div>
         )
     }

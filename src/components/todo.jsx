@@ -6,7 +6,7 @@ import NewTodo from "./NewTodo";
 class TodoList extends Component {
     constructor(props) {
         super(props);
-        this.state = {items: ['Your first item!'] };
+        this.state = {items: [] };
 
         this.addTodo = this.addTodo.bind(this);
         this.removeTodo = this.removeTodo.bind(this);
